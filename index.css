@@ -19,6 +19,7 @@ header{
 }
 
 .bch_logo{
+    
     height :50px;
 }
 
@@ -44,45 +45,48 @@ header{
     border: 0;
 }
 
-@media screen and (max-width: 1050px) {
-    .dropdown_container {
-        width: 100%;
-        justify-content: space-around;
-        margin: 5px 0;
+.menubar span{
+    color: rgb(118, 165, 215);
+    font-size: 3vw;
+    font-weight: 600;
+    display: none;
+}
+@media screen and (max-width : 1050px) {
+    .dspaces{
+        visibility: hidden;
+        font-size: 2vw;
     }
-    header{
-        flex-wrap: wrap;
-        margin-bottom: 0;
+    .menubar span{
+        left :0vh;
+        top: 2.5vh;
+        display: block;
+        position:absolute;
+        left: 2vh;
+        font-size: 6vh;
     }
-    .search_bar {
-        width: 100%;
-        margin: 5px 0;
+    .search_bar{
+         z-index: 1;
+        position: absolute;
+        left : 8vh;
+        width :1vw;
+       
     }
-
+    .bch_logo{
+        display: none;
+    }
+    .rhead{
+        margin : 0 3%;
+    }
     .action_bar {
-        width: 100%;
-        margin: 5px 0;
-    }
-    .banner_vid{
-        margin-top: 50%;
-       width:1%;
-    }
-    .action_bar a {
-        flex-direction: row;
+        display: flex;
+        width :2.6%;
+        position: relative;
+        margin-left: 8vh;
         justify-content: space-around;
-        width: 100%;
+        font-size: 3.5vw;
     }
-
-    .search_icon {
-        font-size: 15px;
-    }
-
-    .search_input {
-        font-size: 14px;
-    }
-
-    .banner{
-        margin-top: 0;
+    .search_input{
+        width:70vw;
     }
 }
 
